@@ -1,0 +1,27 @@
+{
+  "name": "websocket-server",
+  "version": "1.0.0",
+  "description": "Node server for websocket",
+  "main": "server.js",
+  "author": "Evhenii Halenko",
+  "license": "MIT",
+  "scripts": {
+    "dev": "better-npm-run start-dev"
+  },
+  "betterScripts": {
+    "start-dev": {
+      "command": "node server.js",
+      "env": {
+        "NODE_ENV": "development",
+        "ENV": "development",
+        "PORT": 4040
+      }
+    }
+  },
+  "dependencies": {
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "better-npm-run": "^0.1.0"
+  }
+}
